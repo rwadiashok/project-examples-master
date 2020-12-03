@@ -19,5 +19,11 @@ pipeline {
       }
     }
 
+    stage('Start simple pipeline') {
+      steps {
+        echo 'Start simple pipeline'
+      }
+    }
+
   }
 }
