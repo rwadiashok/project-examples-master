@@ -19,9 +19,9 @@ pipeline {
       }
     }
 
-    stage('Start simple pipeline') {
+    stage('Buzz Test') {
       steps {
-        echo 'Start simple pipeline'
+        sh './jenkins/test-all.sh'
       }
     }
 
