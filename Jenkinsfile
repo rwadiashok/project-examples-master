@@ -25,5 +25,11 @@ pipeline {
       }
     }
 
+    stage('artifact') {
+      steps {
+        archiveArtifacts(fingerprint: true, artifacts: 'target/*.jar')
+      }
+    }
+
   }
 }
